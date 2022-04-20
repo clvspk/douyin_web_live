@@ -24,3 +24,18 @@
 1. 本源代码自行改动仅可作学习目的！！！
 2. 少刷抖音，他人美好生活皆虚幻，一切卷的不行，你懂得！！！
 3. 切记浏览器打开直播间弹幕可能不完整，所以做数据统计还是算了
+
+需安装 mongo
+需安装 chromedriver
+
+https://docs.mitmproxy.org/stable/concepts-certificates/#using-a-client-side-certificate
+
+证书问题：
+curl on the command line:
+curl --proxy 127.0.0.1:8080 --cacert ~/.mitmproxy/mitmproxy-ca-cert.pem https://example.com/
+wget on the command line:
+wget -e https_proxy=127.0.0.1:8080 --ca-certificate ~/.mitmproxy/mitmproxy-ca-cert.pem https://example.com/
+macOS
+macOS (automated): sudo security add-trusted-cert -d -p ssl -p basic -k /Library/Keychains/System.keychain ~/.mitmproxy/mitmproxy-ca-cert.pem
+
+mac执行这句话就行 sudo security add-trusted-cert -d -p ssl -p basic -k /Library/Keychains/System.keychain ~/.mitmproxy/mitmproxy-ca-cert.pem
